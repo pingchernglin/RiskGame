@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane hgap="14.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" vgap="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.duke.ece651.grp9.risk.client.LosePopup">
+    <children>
+        <Button fx:id="quitButton" mnemonicParsing="false" onAction="#onQuit" text="Quit" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <font>
+                <Font name="Copperplate" size="13.0" />
+            </font></Button>
+        <Button fx:id="continueButtton" mnemonicParsing="false" onAction="#onContinue" text="Continue" GridPane.rowIndex="1">
+            <font>
+                <Font name="Copperplate" size="13.0" />
+            </font></Button>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="You have lost. Would you like to quit or continue watching?" textAlignment="CENTER" wrappingWidth="313.66119384765625" GridPane.columnSpan="2">
+            <font>
+                <Font name="Copperplate" size="14.0" />
+            </font>
+        </Text>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="240.0" minWidth="-Infinity" prefWidth="150.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="Infinity" minWidth="-Infinity" prefWidth="150.0" />
+    </columnConstraints>
+    <padding>
+        <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+    </padding>
+    <rowConstraints>
+        <RowConstraints maxHeight="40.0" minHeight="-Infinity" percentHeight="60.0" valignment="CENTER" vgrow="ALWAYS" />
+        <RowConstraints maxHeight="40.0" minHeight="-Infinity" percentHeight="40.0" vgrow="NEVER" />
+    </rowConstraints>
+</GridPane>
